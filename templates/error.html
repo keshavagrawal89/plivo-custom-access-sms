@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <h1>Welcome to Plivo SMS Test Dashboard</h1>
+    <div style="">
+    	{% for err in err_list %}
+    	<ul>
+    		<li>Error: {{err}}</li>
+    	</ul>
+    	{%  endfor %}
+    </div>
+</body>
+</html>

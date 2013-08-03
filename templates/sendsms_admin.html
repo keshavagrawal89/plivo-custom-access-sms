@@ -1,0 +1,37 @@
+<html>
+  <head>
+      <title>Send SMS</title>
+      <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+
+  	<h2>Generate one time password</h2>
+	<div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="http://www.plivo.com"><img src="https://plivostatic.s3.amazonaws.com/images/logo.png" class="img-rounded"/></a>
+        </div>
+    </div>
+  	<sub>This will last for 20 minutes onely!</sub>
+  	<div style="">
+  		<table class="table table-striped">
+  			<tr>
+  				<td><b>Passcode</b></td>
+  				<td><b>Time Left</b></td>
+  			</tr>
+  			<tr>
+  				<td>{{pass_code}}</td>
+  				<td>{{time_left}} Secs</td>
+  			</tr>
+  			<tr>
+  				<td colspan="2" style="text-align:center;">
+  					<form action="/admin/gen_pass_code/" method="post" name="gen_pass_code_form">
+  						<input type="submit" value="Generate" />
+  					</form>
+  				</td>
+  			</tr>
+  		</table>
+
+
+  	</div>
+  </body>
+</html>

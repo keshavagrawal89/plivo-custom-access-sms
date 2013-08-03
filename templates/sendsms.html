@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+</head>
+<body>
+	<div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="http://www.plivo.com"><img src="https://plivostatic.s3.amazonaws.com/images/logo.png" class="img-rounded"/></a>
+        </div>
+    </div>
+    <h1>Welcome to Plivo SMS Test Dashboard</h1>
+
+      <div class="control-group">
+        <h3>Send a SMS</h3>
+        <form class="well" action="/send-message/" method="POST" name="send_message">
+          <label class="control-label" for="inputEmail">Enter the passcode <i class="icon-arrow-right"></i> </label>
+          <div class="controls">	
+            <input class="span3" type="text" name="ui_pass_code"></br>
+          </div>
+          <label class="control-label" for="inputEmail">Enter the Number you want to send message <i class="icon-arrow-right"></i> </label>
+          <div class="controls">	
+            <input class="span3" type="text" name="dstNum" placeholder="With country code..."></br>
+          </div>
+          <label class="control-label" for="inputEmail">Enter the message <i class="icon-arrow-right"></i> </label>	
+          <div class="controls">
+            <input class="span3" type="text" name="msgText"></br>
+          </div>
+          <input type="submit" name="sendmsgbutton" value="Send Message">
+        </form>
+      </div>
+
+      <div class="control-group">
+        <h3>Send bulk SMS</h3>
+        <form class="well" action="/send-bulk-message/" method="POST" name="send_bulk_message">
+          <label class="control-label" for="inputEmail">Enter the passcode <i class="icon-arrow-right"></i> </label>
+          <div class="controls">	
+            <input class="span3" type="text" name="ui_pass_code"></br>
+          </div>
+          <label class="control-label" for="inputEmail">Enter the Number you want to send message <i class="icon-arrow-right"></i><sub>Use "," as delimeter between numbers.</sub> </label>
+          <div class="controls">	
+            <input class="span3" type="text" name="dstNum" placeholder="With country code..."></br>
+          </div>
+          <label class="control-label" for="inputEmail">Enter the message <i class="icon-arrow-right"></i> </label>	
+          <div class="controls">
+            <input class="span3" type="text" name="msgText"></br>
+          </div>
+          <input type="submit" name="sendmsgbutton" value="Send Message">
+        </form>
+      </div>
+</body>
+
+</html>

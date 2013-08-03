@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <h1>Welcome to Plivo SMS Test Dashboard</h1>
+
+  	<div style="">
+  		<table class="table table-bordered table-striped table-hover">
+  			<tr>
+  				<td><b>What you need?</b></td>
+  				<td><p>
+  						<ul>
+  							<li>A Plivo <b>standard</b> account</li>
+  							<li>Plivo helper library</li>
+  						</ul>
+  					</p>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td><b>Steps</b></td>
+  				<td><p>
+  						<ol>
+  							<li>Sign up for a plivo account</li>
+  							<li>Go to <a href="https://manage.plivo.com/dashboard/">dashboard</a></li>
+  							<li>Copy auth_id</li>
+  							<li>Click on check box for auth_token and copy</li>
+  							<li>Keep them in a safe place</li>
+  							<li>Now buy a <a href="https://manage.plivo.com/number/search/">number</a>. Yes for sending an SMS through plivo you need to have a number bought from plivo which would be used as a callerId for sending message.</li>
+  							<li>When asked for which application the number should be attached to you are free to attach any application as for sending SMS using API doesn't application attached with the number donesn't affect. And Yes you can always attach another application to a number(Plivo DID) as and when needed.</li>
+  							<li>Now to send SMS you can use your auth_id and auth_token in the following scripts of your preferred programming language:</li>
+  							<ul>
+  								<li><a href="https://github.com/plivo/plivo-examples-python/blob/master/plivo_message.py">Python</a></li>
+  								<li><a href="https://github.com/plivo/plivo-examples-php/blob/master/plivo_message.php">PHP</a></li>
+  								<li><a href="https://github.com/plivo/plivo-examples-ruby/blob/master/plivo_message.rb">Ruby</a></li>
+  								<li><a href="hhttps://github.com/plivo/plivo-examples-java/blob/master/Message/SendMessage.java">Java</a></li>
+  								<li><a href="https://github.com/plivo/plivo-examples-node/blob/master/message.js">nodeJs</a></li>
+  							</ul>
+  							<li><h4>Important Note: If you are sending <b>bulk</b> messages then src paramter in SMS API should have destination numbers divided by "<b><</b>" delimeter. You need to change the src param accordingly in the above mentioned scripts</h4></li>
+  							<li>Also with certain providers we see some messages get blocked because of some restrictions on rates or content/type of SMS. Like for Verizon we have received suggestions from our provider:<br/>   Please do not send more than 10 messages in a 1 minute period with the same origination and/or termination number. Typically, this spam block will be on for 24 hrs.</li>
+  							
+  						<ol>
+  					</p>
+  				</td>
+  			</tr>
+
+  		</table>
+  	</div>
+
+  </body>
+</html>
